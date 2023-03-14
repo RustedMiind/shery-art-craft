@@ -1,0 +1,103 @@
+nav.navbar {
+  position: fixed;
+  top: 0;
+  border-top: 1px solid white;
+  width: 100vw;
+  /* background-color: #b8b8b8; */
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 6rem;
+  z-index: 1000;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+nav.navbar ul.right-side,
+nav.navbar ul.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+nav.navbar ul.right-side a.nav-item,
+nav.navbar ul.left-side a.nav-item,
+nav.navbar ul.middle {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  padding: 1rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  /* margin: 0 0.4rem; */
+  cursor: pointer;
+}
+nav.navbar ul.middle {
+  padding: 0;
+  font-weight: 500;
+  cursor: text;
+  width: 30%;
+}
+nav.navbar ul.middle input {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+}
+nav.navbar ul.left-side h3.nav-item {
+  font-family: "Shantell Sans", cursive;
+  font-size: 1.4rem;
+}
+nav.navbar ul a.nav-item:after {
+  transition: width 150ms ease-out;
+  content: "";
+  width: 0;
+  height: 0.4rem;
+  transform: translateY(0.8rem);
+  background-color: red;
+  position: absolute;
+}
+
+nav.navbar ul.right-side img.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 3rem;
+  width: 3rem;
+}
+nav.navbar ul a.nav-item:hover:after {
+  width: calc(100% - 2.4rem);
+}
+@media (max-width: 1023px) {
+  nav.navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  nav.navbar ul.right-side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: black;
+    font-size: 3rem;
+  }
+  nav.navbar ul.right-side a {
+    font-size: 2rem !important;
+    margin-bottom: 3rem;
+  }
+  nav.navbar ul.right-side.d-none {
+    display: none;
+  }
+  nav.navbar ul.open-nav-icon img {
+    width: 3rem;
+  }
+}

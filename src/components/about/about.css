@@ -1,0 +1,61 @@
+.about {
+  width: 100%;
+  padding: 4rem 16rem;
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: 0.3rem solid black;
+}
+.about > h2.header {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about nav.about-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about nav.about-nav ul li {
+  text-align: center;
+  width: calc(100% / 3);
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+.about nav.about-nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.about nav.about-nav ul li:first-child {
+  border-bottom: 2px solid red;
+}
+.about .content {
+  width: 100%;
+  padding: 2rem 0;
+}
+.about .content > h3 {
+  margin: 1rem 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.about .content > p {
+  width: 90%;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  /* color: rgba(0, 0, 0, 0.7); */
+}
+@media (max-width: 1023px) {
+  .about {
+    padding: 4rem 2rem;
+  }
+  .about .content > p {
+    font-size: 1.6rem;
+    width: 95%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    opacity: 0.6;
+  }
+}

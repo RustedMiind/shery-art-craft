@@ -1,0 +1,205 @@
+.artists {
+  padding-top: 4.6rem;
+  border-top: 0.3rem solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Prompt", sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.artists > h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+/* Branch Slides */
+.artists .container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* background-color: var(--theme-dark); */
+}
+.artists ul {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0rem;
+  list-style: none;
+  /* background-color: var(--theme-dark); */
+}
+.artists ul li {
+}
+.artists ul li button {
+  padding: 0.5em 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-color: var(--theme-dark);
+  color: white;
+  transition: 200ms ease-in-out;
+}
+.women .artists ul li button {
+  background-color: var(--ladies-sec-color);
+  color: white;
+}
+.artists ul li button:hover {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--men-main-color);
+  background-color: var(--theme-darkest);
+  color: white;
+  margin: 0 1rem;
+}
+.women .artists ul li button:hover {
+  box-shadow: 0 0 1em var(--ladies-shadow-color);
+  background-color: var(--ladies-main-color);
+}
+.artists .header-name {
+  width: 100vw;
+  text-align: center;
+  padding: 0 2rem;
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: var(--theme-dark);
+}
+.women .artists .header-name {
+  color: var(--ladies-main-color);
+  text-shadow: 0.05rem 0.05rem 0.2rem var(--ladies-shadow-color);
+}
+.artists .container .title {
+  display: flex;
+  z-index: 2;
+  height: 2.6rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-color: var(--theme-darkest60);
+  width: inherit;
+  color: white;
+  font-size: 2.4rem;
+  pointer-events: none;
+  font-weight: 500;
+}
+.women .artists .container .title {
+  background-color: var(--ladies-main-color60);
+}
+.artists .container .slider {
+  width: 70vw;
+  height: 40vw;
+  overflow: hidden;
+  /* border-radius: 0.6rem; */
+  box-shadow: 0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.6);
+}
+.artists .container .slider .image-preview {
+  width: 100%;
+  /* border-radius: 1rem; */
+}
+.artists .about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+.artists .about h2 {
+  font-size: 2.4rem;
+  color: var(--dark-bg-color);
+  padding-bottom: 0.4rem;
+}
+.artists .about p {
+  font-size: 1.2rem;
+  width: 55%;
+  text-align: center;
+  opacity: 0.7;
+  line-height: 1.7rem;
+}
+.artists .our-team {
+  width: 100%;
+  padding: 0.4rem;
+  padding-top: 1rem;
+  font-size: 2.4rem;
+  text-align: center;
+  /* letter-spacing: 0.1rem; */
+  color: var(--dark-bg-color);
+}
+.artists .persons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 2rem 4rem;
+}
+.artists .person-card {
+  padding: 0;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  height: 30rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+  width: fit-content;
+}
+.artists .person-card .card-info {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.artists .person-card .card-info .image-container {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+.artists .person-card .card-info .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.artists .person-card .card-info .person-about {
+  width: 85%;
+  height: fit-content;
+  /* min-height: 16rem; */
+  margin-top: -2rem;
+  background-color: white;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+.artists .person-card .card-info .person-about h5 {
+  width: 100%;
+  color: var(--men-sec-color);
+  text-align: center;
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+}
+.women .artists .person-card .card-info .person-about h5 {
+  color: var(--ladies-sec-color);
+}
+.artists .person-card .card-info .person-about h3 {
+  width: 100%;
+  padding-top: 0.2rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.artists .person-card .card-info .person-about p {
+  width: 100%;
+  padding: 0.5rem;
+  opacity: 0.7;
+  line-height: 1.2rem;
+}
+@media (max-width: 1023px) {
+}
